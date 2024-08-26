@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position -Css</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 133px;
+            width: 80vw;
+            border: 2px solid black;
+            padding: 3px;
+            margin: 3px;
+        }
+
+        /* Static Position */
+        /* By default the Position is stack which means it is as it is */
+        /* we cannot adjust top, bottom, etc while the position is static */
+
+        .box1 {
+            background-color: aqua;
+
+            /* Absolute Position */
+            /* It sets the position according to the first parent if the parent has position property, and if no parent has position property then it sets it position to the last and final parent which is html, ie, <html> </html>*/
+            /* position: absolute; */
+            /* top: 0;
+            right: -30px; */
+
+
+            /* Sticky Position */ 
+           /* When the element will reach to the border while scrolling, it will be sticked to the the top/bottom and other elements will pass through it (go down and up through it) */
+            position: sticky;      
+            top: 0px;           /* Scroll full and the see the magic */
+        }
+        .box2 {
+            background-color: azure;
+
+            /* Relative Position */
+            /* We can use top botton left right to adjsut the relative position */
+            /* position: relative;
+            top: 100px;
+            left: 50px; */
+            /* or, any one of the two */
+            /* bottom: 2px;
+            right: 10px; */
+
+
+
+            /* z-index: 3;          Note: The one which will have more Z-index that element will overlap the other                 */
+        }                                               
+        .box3 {                
+
+            background-color: burlywood;
+            /* position: relative;
+            z-index: 2; */
+        }
+        .box4 {
+            background-color: purple;
+            /* Fixed Position */
+            /* The element will remain fixed and not move from the screen even when we sroll the page we can see it in fixed same  */
+            /* position: fixed;
+            top: 56vh;
+            left: 22vh; */
+            /* z-index: 3; */
+            
+            /* height: 200px;
+            width: 50vw; */
+        }
+
+        .parent {
+            margin: 34px;
+            padding: 200px;
+            height: 150vh;
+            border: 2px solid purple;
+
+            position: sticky;  /* If the parent had no position property then box 1, s would set its position according to the html */
+           
+        }
+
+        /* Sticky and Other properties on this file  */
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box box1">box 1</div>
+        <div class="box box2">box 2</div>
+        <div class="box box3">box 3</div>
+        <div class="box box4">box 4</div>
+    </div>
+    
+</body>
+</html>

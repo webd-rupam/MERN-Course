@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadoes and Outlines</title>
+    <style>
+.box {
+    border: 2px solid black;
+    background-color: rgb(199, 15, 219);
+    padding: 20px;
+    
+    /* to add shadow of the element(box) */
+    box-shadow: 5px 15px 5px 10px #9ba711;  /* left-right, up-down, blue, spread, color */
+
+    /* box-shadow: 5px 15px 15px #9ba711 inset; inset makes the shadow inner */
+
+
+
+
+    /* Outline */
+    /* Outlines cover the outer aread of border, and can take the shape of the border */
+    /* they are not part of box modeal and does not take any space */
+
+    outline: 2px solid red;
+    outline-offset: 5px; /* space from the element */   
+}
+
+
+.text {
+     /* to add shadow of the element(box) */
+    text-shadow: 5px 6px 2px #ca4616;
+    outline: 2px solid cadetblue;
+    outline-offset: 5px;
+}
+
+
+    </style>
+
+</head>
+<body>
+    <div class="box">Mossaic</div>
+    <br>
+    <br>
+    <div class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus dignissimos adipisci quod.</div>
+    
+    
+</body>
+</html>

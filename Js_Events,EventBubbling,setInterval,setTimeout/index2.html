@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling, setInterval, setTimeout -Js</title>
+    <style>
+        .child {
+            background-color: aliceblue;
+            padding: 34px;
+            margin: 34px;
+            border: 2px solid black;
+        }
+
+        .childContainer {
+            background-color: rgb(230, 197, 11);
+            padding: 34px;
+            margin: 34px;
+            border: 2px solid black;
+        }
+        .container {
+            background-color: rgb(230, 11, 121);
+            padding: 34px;
+            margin: 34px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="childContainer">
+            <div class="child">Im a child</div>
+        </span>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>

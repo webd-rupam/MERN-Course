@@ -1,0 +1,10 @@
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+nav {
+    background-color: beige;
+    padding: 24px;
+}

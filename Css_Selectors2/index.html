@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors -Css</title>
+    <style>
+        /* .boxes .box:first-child {
+            background-color: red;
+        } */
+
+
+        /* .boxes .box::first-line {
+            color: yellow;
+        } */
+
+
+        .boxes * { /* this means everything inside the box */
+            color: blue;
+            border: 2px solid black;
+        }
+
+        /* Attribute selector */
+        [data-color="primary"] {
+            margin: 20px;
+        }
+
+        .boxes::before {  /* If we want to add anything before or after an elment */
+            content: "I'm good";
+            background-color: rgb(111, 222, 180);
+        }
+
+        ::selection {  /* If we select anything in the webpage then- */
+            color: aqua;
+            background-color: black;
+        }
+
+        input::placeholder { /* To style the placeholder */
+            color: brown;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="boxes">
+        <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nesciunt doloremque corporis laudantium? Dolore fugiat vero consequatur alias ex similique minima illum cumque mollitia omnis, eligendi rerum eos debitis dolores nulla fugit suscipit ea laboriosam! Nesciunt quis repellat iusto sunt illo, recusandae, aspernatur beatae alias voluptatum minima debitis! Aliquam dolores nobis, mollitia iste enim corporis illo doloribus quia assumenda aliquid vel itaque commodi repellendus unde, totam ipsa magnam quas autem facere officiis libero ipsam quo voluptates? Alias saepe reprehenderit libero accusantium exercitationem, iste eos. Quas tempore rerum vel! Quis, ratione. Dolorum obcaecati, mollitia neque officiis, distinctio eos, cum recusandae dicta quibusdam vitae adipisci ea? Nisi delectus eius cum temporibus quis iusto! Officiis provident similique placeat est, impedit delectus incidunt, esse facere pariatur temporibus dolor quos a ea sed rerum culpa ut commodi quae nisi! Sed eos illo explicabo deleniti distinctio quod veniam sunt libero at, nostrum natus minima nulla obcaecati maiores enim laboriosam corrupti quo necessitatibus repudiandae blanditiis adipisci dolores officiis praesentium! Doloremque maxime deserunt, tenetur excepturi aliquid dolorum soluta illo eius facere iure quis laudantium voluptas, nobis a. Sit doloremque repudiandae distinctio excepturi quas dolore neque aspernatur expedita optio incidunt eaque laudantium dignissimos laboriosam repellat esse nesciunt dolores perferendis fugiat ipsa molestiae laborum minus, cum, facere assumenda? Odit nisi reprehenderit sint suscipit modi quaerat quidem, non molestiae rerum rem quasi laborum iusto. Quis debitis sit fugit pariatur commodi tenetur voluptatibus exercitationem rem?</div>
+
+        <div data-color="primary" class="box">Hey! I'm a box</div>
+        <div class="box">Hey! I'm a box</div>
+
+        <input type="text" placeholder="Enter your name">
+    </div>
+
+    
+</body>
+</html>

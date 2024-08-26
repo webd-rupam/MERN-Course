@@ -1,0 +1,16 @@
+/* If we want the same thing to be done across various items */
+h4, h3 {
+    background-color: rgb(242, 10, 126); 
+    color: bisque;
+}
+
+/* If we want different thing to be done across various items */
+pre {
+    color: blue;
+    background-color: rgb(128, 128, 128);
+}
+
+img {
+    background-color:chartreuse;
+    color: black;
+}

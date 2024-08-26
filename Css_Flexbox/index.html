@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox -Css</title>
+    <style>
+        .container {
+
+
+            /* Flexbox properties of container*/
+
+
+            border: 2px solid red;
+            height: 80vh;
+
+            /* We have to use this display flex, in the main container to apply it to the items */
+            display: flex;    /* using this we can use the properties of flex box */
+
+
+            /* Flexbox direction */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; it will reverse thre column */
+
+
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; it will reverse the row */
+
+
+
+
+            /* Main axis is the direction of the flex box */
+            /* If the direction of the item is horizontal, then the main axis will be horizontal, and cross axis will be vertical */
+            /* To make changes Main Axis */
+
+            /* justify-content: center;    Horizontally center */
+            /* justify-content: flex-end;    Horizontally end */
+            /* justify-content: space-around; */
+
+            /* space between, space around, space evenly, right, left, and many more */
+            
+
+            /* If the main axis is vertical then the cross section will become horizontal  */
+            /* Cross Axis is the opposite direction of the flex box */
+            /* To make changes Cross Axis */
+            align-items: center;     /* Vertically Center */
+            /* Stretch, flex end, flex start, initial, etc */
+
+
+
+            /* flex wrap */
+            /* flex-wrap: wrap; */
+            /* If the items dont fit in the screen and they overflow, then using flex wrap, we can fix the issue */
+            
+            /* flex-wrap: wrap-reverse; to reverse the wrap */
+
+
+           /* to wrap in the whichever direction we want */
+            /* flex-flow: row wrap;  */ 
+            /* flex-flow: column wrap; */
+
+
+
+            /* Align Content */
+            /* If there are multiple rows, and to center multiple rows we use align content */
+            /* But if there is only one row, and to center one row we use align items */
+            /* Note: there is no justify items, justify content is enough */
+            align-content: center;
+
+
+
+
+                /* Gap */
+       /* To add Gap between the elements */
+            /* gap: 30px;  */
+
+            /* To add row gap only */
+            /* row-gap: 30px; */
+
+            /* to add column gap only */
+            /* column-gap: 10px; */
+
+            /* or */
+            gap: 30px 10px;
+
+
+        }
+
+        .item {
+            height: 92px;
+            width: 92px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            /* margin: 4px; */
+            text-align: center;
+
+
+            /* Item properties of lex box */
+            /* Flex grow increase width of the all items. and if we want to use flex grow for one item then we can do it with class */
+            flex-grow: 2; 
+
+            /* Flex shrink decreases width of the all items only when the size of the screen is decreased and if we want to use flex shrink for one item then we can do it with class */
+            /* It shrinks the number of times as the value, eg flexshrink: 2, then it will shrink 2 times */
+            flex-shrink: 2;
+        }
+
+        /* Item Property of flexBox */
+
+        /* Order */
+        .order-1 {
+            order: 1;
+        }
+        .order-2 {              /* Default Order of the items is 0, ie, the itemps which are not given order numbers are 0 */     
+            order: 2;          /* The item which has the highest order value will be placed in the last */
+                               /* The item which has the lowest order value will be placed in the previous*/
+        }
+        .order-3 {
+            order: 3;
+        }
+
+        .demo {
+            /* flex box item prot[erty */
+            /*Align self, it aligns particular items */
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <div class="item order-2">1</div>
+            <div class="item order-1">2</div>
+            <div class="item order-3">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item demo">10</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">9</div>
+            <div class="item">9</div>
+            <div class="item">9</div>
+            <div class="item">9</div>
+            <div class="item">9</div>
+            <div class="item">9</div>
+            <div class="item">9</div>
+            <div class="item">9</div>
+            
+        </div>
+    </main>
+    
+</body>
+</html>

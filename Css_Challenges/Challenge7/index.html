@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website using grid -Css</title>
+
+    <style>
+        .logo img{
+            width: 140px;
+        }
+        
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+       .right ul {
+            display: flex;
+            align-items: center;
+            gap: 34px;
+        }
+
+        .right ul li {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        svg {
+            padding: 5px;
+        }
+
+        .end {
+            width: 23px;
+            position: relative;
+            top: 5px;
+        }
+
+
+
+        .container2 {
+    display: grid;
+    grid-template-areas: 
+        "one two three"
+        "four five six"
+        "seven eight nine"
+        "ten ten ten"; /* Adjust for additional rows if needed */
+
+    gap: 22px;
+    justify-content: center;
+
+    align-content: center;
+}
+
+        .box {
+            height: 110px;
+    width: 226px; /* Adjust width as needed */
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        p {
+            font-size: 10px;
+            font-weight: 700;
+            color: white;
+            border-radius: 4px;
+            display: inline;
+            padding: 6px;
+            margin-left: 12px;
+
+            position: relative;
+            top: 5px;
+        }
+
+        .th {
+        background-color: rgb(32, 176, 232);
+        position: relative;
+        left: 5px;
+        }
+
+        .sx {
+            background-color: #5cb85c;
+            position: relative;
+            right: 5px;
+        }
+
+        .litup {
+            position: relative;
+            top: -6px;
+        }
+
+        h3 {
+            text-align: center;
+            position: relative;
+            bottom: 6px;
+        }
+
+        small {  
+          display: flex;
+          position: relative;
+          bottom: 23px;
+          left: 95px;
+          font-size: 11px;
+        }
+
+
+        .port {
+            position: relative;
+            left: 60px;
+        }
+
+        .jap {
+            position: relative;
+            left: 90px;
+        }
+
+        .trad {
+            position: relative;
+            left: 65px;
+        }
+
+        .box1 {
+            grid-area: one;
+        }
+        .box2 {
+            grid-area: two;
+        }
+        .box3 {
+            grid-area: three;
+        }
+        .box4 {
+            grid-area: four;
+        }
+        .box5 {
+            grid-area: five;
+        }
+        .box6 {
+            grid-area: six;
+        }
+        .box7 {
+            grid-area: seven;
+        }
+        .box8 {
+            grid-area: eight;
+        }
+        .box9 {
+            grid-area: nine;
+        }
+        .box10 {
+            grid-area: ten;
+        }
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+
+    position: relative;
+    right: 200px;
+}
+
+.hamburger .line {
+    width: 20px;
+    height: 2px;
+
+    background-color: rgb(16, 145, 196);
+}
+
+
+
+@media only screen and (max-width: 980px) {
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right ul {
+        visibility: hidden;
+    }
+
+    .hamburger {
+        display: flex;
+        position: fixed;
+    }
+
+    .logo {
+        position: relative;
+        left: 100px;
+    }
+}
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="utr.png" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span>Products</span> <svg width="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg></li>
+                    <li><span>Pricing</span> <svg width="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg></li>
+                    <li><span>Resources</span> <svg width="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg></li>
+                    <li><span>About us</span> <svg width="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg></li>
+                    <li><span>Security and compliance</span></li>
+                    <li><img class="end" src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt=""></li>
+                </ul>
+            </div>
+
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+        </nav>
+    </header>
+
+<br>
+<br>
+<br>
+
+    <main>
+        <div class="container2">
+            <div class="box box1">
+                <h3>English</h3>
+                <p class="th">Download 32-bit</p>
+                <p class="sx">Download 64-bit</p>
+            </div>
+            <div class="box box2">
+                <h3>Deutsch</h3>
+                <small>German</small>
+                <p class="th litup">Download 32-bit</p>
+                <p class="sx litup">Download 64-bit</p>
+            </div>
+            <div class="box box3">
+                <h3>Italiano</h3>
+               <small>Italian</small>
+                <p class="th litup">Download 32-bit</p>
+                <p class="sx litup">Download 64-bit</p>
+            </div>
+            <div class="box box4">
+                <h3>Español</h3>
+              <small>Spanish</small>
+                <p class="th litup">Download 32-bit</p>
+                <p class="sx litup">Download 64-bit</p>
+            </div>
+            <div class="box box5">
+                <h3>français</h3>
+                <small>French</small>
+                <p class="th litup">Download 32-bit</p>
+                <p class="sx litup">Download 64-bit</p>
+            </div>
+            <div class="box box6">
+                <h3>Português brasileiro</h3>
+                <small class="port">Brazilian Portuguese</small>
+                <p class="th litup">Download 32-bit</p>
+                <p class="sx litup">Download 64-bit</p>
+            </div>
+            <div class="box box7">
+                <h3>日本</h3>
+              <small class="jap">Japanese</small>
+                <p class="th litup">Download 32-bit</p>
+                <p class="sx litup">Download 64-bit</p>
+            </div>
+            <div class="box box8">
+                <h3>한국어</h3>
+                <small>Korean</small>
+                <p class="th litup">Download 32-bit</p>
+                <p class="sx litup">Download 64-bit</p>
+            </div>
+            <div class="box box9">
+                <h3>中国</h3>
+                <small>Chinese</small>
+                <p class="th litup">Download 32-bit</p>
+                <p class="sx litup">Download 64-bit</p>
+            </div>
+            <div class="box box10">
+                <h3>中國</h3>
+               <small class="trad">Traditional Chinese</small>
+                <p class="th litup">Download 32-bit</p>
+                <p class="sx litup">Download 64-bit</p>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

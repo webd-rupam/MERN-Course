@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animation -Css</title>
+    <!-- First Way -->
+    <style>
+        .container {
+            position: relative;
+            height: 80vh;
+            width: 40vw;
+            background-color: rgb(135, 135, 238);
+        }
+
+        .box {
+            background-color: red;
+            height: 121px;
+            width: 121px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: 100px;
+            
+            animation:identifierok 4s forwards; 
+           
+        }
+
+        @keyframes identifierok {
+            30% {
+                transform: translateY(-430px) translateX(100px);
+            }
+            43% {
+                transform: translateY(8px) translateX(130px);
+            }
+
+
+            62% {
+                transform: translateY(-290px) translateX(235px);
+            }
+            75% { 
+                transform: translateY(8px) translateX(250px);
+            }
+
+
+            95% {
+                transform: translateY(-120px) translateX(310px);
+            }
+
+            100% {
+                transform: translateY(8px) translateX(335px);
+            }
+            
+        }
+
+        @media only screen and (max-width: 980px) {
+            .container {
+                width: 78vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            
+        </div>
+    </div>
+</body>
+</html>

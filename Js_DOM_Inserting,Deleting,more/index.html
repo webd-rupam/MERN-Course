@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="position: relative;" class="box red">Hey im a box</div>
+    </div>
+    <script>
+        // will work in browser
+        // shows the text,any thing or element inside a tag
+        document.querySelector(".box").innerHTML
+
+
+
+        // shows only the text inside a element
+        document.querySelector(".box").innerText
+
+
+
+        // shows the same element as well as the text, anything or element inside a tag
+        document.querySelector(".container").outerHTML
+
+
+
+        // to hide a element
+        document.querySelector(".container").hidden = false
+
+
+
+        // to know if there is any attribute in an element
+        document.querySelector(".box").hasAttribute("style")
+
+
+
+        // to know what is applied inside the attribute
+        document.querySelector(".box").getAttribute("style")
+
+
+
+        // to set a attribute
+        document.querySelector(".box").setAttribute("style", "display: flex")
+
+
+
+        // to remove a attribute
+        document.querySelector(".box").removeAttribute("style")
+
+
+
+        // we can remove or write any text in an website using backspace we can remove and write it through keyboard keys
+        document.designMode = "on"
+
+
+
+        // to insert a new element
+        let div = document.createElement("div")
+        div.innerHTML = "Hi here"
+        div.setAttribute("class", "boxcreated")
+
+        // to insert in the last
+        // document.querySelector(".container").append(div)
+
+        //to insert before the container
+        // document.querySelector(".container").before(div)
+
+        // to insert after the container
+        // document.querySelector(".container").after(div)
+
+        // to insert in the container but as the first one
+    //    document.querySelector(".container").prepend(div)
+
+
+    // to insert a html string,element anywhere
+    let cont= document.querySelector(".container")
+    cont.insertAdjacentHTML("beforeend", "Hi wassuup buddy")
+
+
+    // to remove an element
+    // document.querySelector(".box").remove()
+
+    // to know what what classes are there in an element
+    document.querySelector(".container").classList
+
+    // to know the class names in an element
+    document.querySelector(".container").className
+
+
+    // to add a class
+    document.querySelector(".container").classList.add("Nice")
+
+    // to remove a class
+    document.querySelector(".container").classList.remove("Nice")
+
+
+// to toggle(that means to on a thing if its off, or, off the thing if its on)
+document.querySelector(".container").classList.toggle("red")
+
+    </script>
+</body>
+</html>

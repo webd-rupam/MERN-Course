@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query -Css</title>
+
+    <!-- Media queries are used to make the website responsive for every device or screeen, either its laptop, iohone, andoid phone, etc -->
+     <!-- To change the styles for different devices -->
+
+    <style>
+        body {
+            background-color: red;
+        }
+
+        /* Media Query */
+        /* If the screen size is 455px, then what will happen- */
+        @media only screen and (max-width: 455px){   /* In case of max-width, If the width becomes less than 455 then the background colour will be blue */
+
+            /* In case of min-width, If the width become more than 455 then the background colour will be blue */
+
+            body {
+                background-color: blue;  
+            }
+
+            .boxes {
+                flex-direction: column;
+            }
+        }
+
+        .boxes {
+            display: flex;
+        }
+
+        .box {
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            padding: 3px;
+            margin: 3px;
+        }
+
+
+        /* If its in landscape or portrait mode then:- */
+        @media screen and (orientation: landscape) { 
+            body {
+                border: 2px solid purple;   /* If it becomes landscape then border will show and if it becomes portrait then border will not be shown */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Im a Red body guy
+    </div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

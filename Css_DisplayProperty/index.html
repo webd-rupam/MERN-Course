@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Display property -Css</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box {
+            border: 2px solid blue;
+            padding: 45px;
+            margin: 20px;
+            width: 344px;
+            /* display: inline; if we do this then padding, margin, etc will not apply on top */
+
+            /* to apply padding, margin etc for the top also then we have to use inline block */
+            display: inline-block;
+        }
+        .box1 { 
+            /* both the visibility and the space will be removed */
+            /* display: none;   */
+
+            /* only it will be invisible, the space will remain as it is */
+            /* visibility: hidden; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        I am a good
+    </div>
+
+    <div class="box">boy</div>
+
+    <span>Im a bad</span>
+    <span>girl</span>
+    
+</body>
+</html>

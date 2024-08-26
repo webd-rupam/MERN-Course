@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model -CSS</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box {
+            background-color: aqua;
+        }
+
+        .box1 {
+            color: brown;
+            margin: 35px;
+            padding: 50px;
+            border: 5px solid gray;
+
+
+            /* If we set only height as 200px, then it doesnt include all(total of all) */
+            /* height alone =200px */
+            height: 200px;
+
+            /* If we use box sizing then it includes total of all height is 200px, and not alone 200px */
+            /* padding+border+content= height (200px, & not height alone=200px) */
+            box-sizing: border-box; 
+        }
+        
+        .box2 {
+            color: blue;
+            margin: 25px;
+            padding: 50px;
+            border: 5px solid gray;
+            height: 200px;
+            box-sizing: border-box; 
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">Im a Box</div>
+    <div class="box box2">Im box 2</div>
+</body>
+</html>

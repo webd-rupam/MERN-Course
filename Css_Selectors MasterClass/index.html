@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors Masterclass -CSS</title>
+
+    <style>
+        /* Class selector */
+        .red {
+            background-color: red;
+        }
+
+
+
+
+        /* Id selector */
+        #blue {
+            background-color: blue;
+        }
+      
+
+
+
+        /* Child Selector */
+        div > p {  /* it will work if any element is the direct child of the parent element */
+
+                  /* and only that div(element) will be affected which has the seleted child */
+            background-color: rgb(9, 11, 11);
+            color: bisque;
+        }
+
+
+
+
+        /* Descendant Selector */
+        div h3 { /* it will work even if its the indirect child or direct child but it should be there inside the parent element(must be a descendant*/
+
+            background-color: aqua;
+        }
+
+
+
+
+        /* Universal Selector */
+        * { /* it selects all the elements as a whole*/
+            background-color: rgb(241, 241, 115);
+        }
+
+
+
+
+        /* Pseudo Selector */
+        a:visited { /* If the link is visited then what will happen */
+
+            color: deeppink; 
+        }
+
+        a:active { /* If the link is clicked then then what will happen */
+
+            background-color: brown;
+        }
+
+        a:link { /* To set the colour,bg, or anything of the link */
+            
+            color: darkgreen;
+        }
+
+        a:hover { /* If we hover in the element the  what will happen */
+
+            background-color: beige;
+        }
+        
+        *:hover {
+            background-color: bisque;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+     
+    <div class="red">
+        Hi! How are u?
+    </div>
+</header>
+
+<br>
+<br>
+<br>
+
+    <div id="blue">
+        Wassup man?
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div>
+        hi how are u?(same)
+        <p>Nobody does it better(same)</p>
+    </div>
+
+    <br>
+    <br>
+
+    <div>
+        <article>
+            ok(same2)
+            <h3>Highlight(same2)</h3>
+        </article>
+    </div>
+
+    <br>
+    <br>
+
+    <div>
+        <a href="http://github.com">Github</a>
+    </div>
+    
+</body>
+</html>

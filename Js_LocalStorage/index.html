@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <!--To store a thing in browser so that it doesnt get away after reloading -->
+    <!-- We can only add string in local storage -->
+    <script>
+        if(localStorage.getItem("name")) {
+            p=localStorage.getItem("name")
+            document.write("Welcome " + p)
+        }
+        else {
+       let p=prompt("What's Your Name?")
+        localStorage.setItem("name", p)
+        document.write("Welcome " + p)
+
+        }
+    </script>
+</body>
+</html>

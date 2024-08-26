@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms -By me</title>
+</head>
+<body>
+
+<h1>Fill the Form Below-</h1>
+
+    <!--Form Tag-->
+    <form action="post"> <!--Two types of requests "get" request nad "post" request-->
+                         <!--Get req is simple & post req is used for more amount of data-->
+                 
+      <label for="username">Username:</label>           
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>    <!--We use require attribute so that the input is must, if not filled then it wont proceed-->
+                    <!--id uniquely identifies an item, one id can be used for one single item-->  
+
+                    <br>
+
+    
+<p> Enter the gender:</p>                    
+                    <!--Input & label tags-->
+       <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" value="male">  
+
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="female" value="female">
+
+      <br>
+      <br>
+
+      <label for="Subscribe">Tick mark if subscribed:</label>
+      <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+
+      <br>
+      <br>
+      <br>
+
+      <!--Textarea tag-->
+
+      <label for="comment">Comments:</label>
+<textarea name="comment" rows="4" cols="30" id="comment">
+
+      Give your feedback</textarea>
+
+      <br>
+      <br>
+
+      
+      <!--Select Tag-->
+      <label for="choice">Enter the choice of fruit:</label>
+      <select name="fruits" id="choice">
+        <option value="apple">apple</option>
+        <option value="banana">banana</option>
+        <option value="cherry">cherry</option>
+        <option value="Berry">Berry</option>
+      </select>
+
+    </form>  
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform -Css</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            background-color: beige;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* To Rotate Something */
+            transform: rotate(40deg);
+            /* We can transform x, y, z individually */
+
+
+
+            /* To make bigger or smaller */
+            /* transform: scale(1.6); */
+            /* We can transform x, y, z individually */
+
+
+            /* To skew */
+            /* transform: skew(20deg); */
+             /* We can transform x and y ndividually (we cant skew z) */
+
+
+             /* To move left-right, up and down */
+             /* transform: translateX(100px) translateY(100px);*/  /* Also we can apply multiple transform as shown */
+             
+
+             /* To rotate or do anything at a certain single point */
+             transform-origin: 50% -0%;
+        }
+        .container {
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling List -Css</title>
+
+    <style>
+        nav ul li {
+            /* Applying list style as different numbers */
+            list-style: bengali;
+
+            /* To apply nothing, eg, no numbers, sybols will be shown, only it will be blank  */
+            list-style: none;
+
+
+            /* Applying list style as different emojis, or anything we want */
+            list-style-type: ">";
+            list-style-type: "😎 ";
+
+
+            /* Applying list style as images, gifs, vids */
+            list-style-image: url("https://w7.pngwing.com/pngs/895/199/png-transparent-spider-man-heroes-download-with-transparent-background-free-thumbnail.png");
+
+
+
+            background-color: yellow;
+            /* bg color will not be applied on list number as its outside */
+            border: 2px solid black;
+
+            /* To apply bg color or anything on list number also, we have to use list-style-position property*/
+            list-style-position: inside;
+            /* position of the list style */
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

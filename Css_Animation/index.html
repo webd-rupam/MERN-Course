@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations -Css</title>
+    <!-- Animation means the way the tranisition is happening or getting done -->
+    <style>
+        .container {
+            background-color: rgb(9, 106, 106);
+            height: 80vh;
+            width: 30vw;
+            /* animation-name: identifier;
+            animation-duration: 2s; */
+        }
+
+        .box {
+            background-color: aqua;
+            width: 34px;
+            height: 45px;
+
+           /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation-name: identifier; */
+
+            /* Duration of the animation */
+            /* animation-duration: 3s; */
+
+            /* How many times the animation will work */
+            /* animation-iteration-count: 2; */
+
+            /* Animation timing Style */
+            /* animation-timing-function: cubic-bezier(0.76, 0.22, 0, 1.01); */
+
+            /* Direction of the animation */
+            /* animation-direction: reverse; */
+
+            /* The animation can be played or paused from the midway or where it ended */
+            /* animation-play-state: paused; */
+
+            /* animation-fill-mode: backwards;  /* It will not retain the latest property, it will go back to the original property after the animation is completed */
+            /* animation-fill-mode: forwards;    It will retain the latst property given to it after the animation is completed */
+
+
+
+           /* To use different animations together together */
+ animation: identifier 4s ease-in 3, identifiersec 2s 2;
+
+        } 
+        /* We can change keep the name of the identifier of anything */
+        @keyframes identifier {
+            /* initially how will be the animation */
+            from {
+            background-color: red;
+            }
+
+            /* Then after that what will happen */
+            to {
+                background-color: yellow;
+                transform: translateX(1000px);
+            }
+        }
+
+        /* Multiple animations */
+        @keyframes identifiersec {
+            /* When the animation is in 0 percent then what will happen */
+            10% {
+                transform: rotate(100deg);
+            }
+
+            20% {
+                transform: rotate(220deg);
+            }
+
+            40% {
+                transform: rotate(250deg);
+            }
+
+            80% {
+                transform: rotate(300deg);
+            }
+
+            100% {
+                transform: rotate(340deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>

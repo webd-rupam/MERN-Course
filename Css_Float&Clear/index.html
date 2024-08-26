@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear -CSS</title>
+    <style>
+        .cards {
+            border: 2px solid black;
+
+            /* To fix float overflow we use:- */
+            display: flow-root;
+        }
+
+        .card {
+            border: 2px solid red;
+        }
+
+        img {
+            /* FLOAT */
+            /* Note: the image, or any element can overflow in float */
+
+            float: right;    /* float does not overlap the other elements */ 
+        }
+
+        .card:nth-child(3) {
+            background-color: aqua;
+
+            /* CLEAR */
+             /* Clear means it will not allow any element to float on its given side, in this case right side*/
+            clear: right;  
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://media.istockphoto.com/id/928826678/photo/two-men-relaxing-and-fishing.jpg?s=612x612&w=0&k=20&c=j1s8gz301z6RoJxkOhSY0efgg71ivxveyV30Y05oR3E=" alt="" width="250px">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquid officiis commodi adipisci omnis quas illo quo veritatis voluptatibus autem. Consequuntur, magnam corrupti.</p>
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum in eaque corporis minus iure, doloremque provident, consequatur pariatur necessitatibus excepturi dolore est quibusdam saepe amet velit ea quos iste repellat consectetur aspernatur facere perferendis maxime assumenda aut. Distinctio nihil repudiandae, accusamus veniam dolor at, rem, et eum maxime repellendus sapiente nemo! Provident nesciunt veniam hic saepe quis incidunt ea ad quos, illum quo harum. Error officiis repudiandae sint nemo vel ullam suscipit et? Laudantium labore sed aspernatur voluptas odio autem aut, reiciendis dolore expedita commodi, deserunt facere blanditiis quasi vitae possimus totam sapiente? Necessitatibus officia expedita perspiciatis dignissimos animi repudiandae eum. Magni enim sed praesentium id voluptatem animi distinctio, cum repellendus ipsum vel pariatur, odit iure amet libero dolor saepe? Nulla fugiat asperiores eos tempore quidem temporibus rem quas, expedita, at illo deleniti porro dolore facilis dolores, mollitia vero eum amet! Architecto aperiam explicabo, porro vitae maxime harum, ducimus impedit voluptatibus inventore fuga ab assumenda sint at laboriosam minus tempore possimus excepturi ea atque quisquam praesentium ullam dolores! Pariatur laudantium sint nisi reprehenderit praesentium quam quidem, suscipit id aliquam exercitationem eaque sunt adipisci architecto? Quas deleniti ipsum non? Vitae optio ex corporis similique recusandae? Maxime, soluta laboriosam, nulla quisquam voluptate culpa at aliquam saepe ipsa dolorum nihil cum maiores doloremque totam officiis magnam quaerat, reiciendis magni ipsam sit repellat ducimus. Vero possimus consectetur dignissimos officiis in. Maiores perspiciatis quisquam tempora dolor quidem voluptate qui facere dicta dolorum nesciunt similique, tempore quas labore fuga in harum recusandae maxime minima laborum inventore unde aliquid explicabo sed enim. Illo, eligendi minima. Itaque voluptates iure at amet recusandae, explicabo officia aliquid dolorum quam! Nesciunt consectetur natus, pariatur excepturi est qui quidem quibusdam rerum assumenda nihil nobis amet ut doloremque tenetur sequi, aut velit, harum ab odit error reiciendis reprehenderit modi laboriosam. Asperiores eos quaerat deleniti omnis ipsum recusandae molestiae maxime sequi consectetur, minus dolore aspernatur obcaecati atque voluptate, tempora unde nisi nemo possimus sed magni praesentium cumque nam, reprehenderit nesciunt. Soluta, nulla possimus. Adipisci unde quibusdam quisquam?</div>
+        <div class="card">Card 3</div>
+    </div>
+    
+</body>
+</html>

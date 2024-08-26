@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Units -Css</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* .box { /*pixels(px)
+            box-sizing: border-box;
+            border: 2px solid rgb(18, 17, 17);
+            background-color: rgb(16, 202, 244);
+            width: 1080px;
+        } */
+
+        .box { /* Viewport Width(vw) */
+            /* It adjusts the size according to the size of the device's screen*/
+            box-sizing: border-box;
+            border: 2px solid rgb(18, 17, 17);
+            background-color: rgb(16, 202, 244);
+            margin: auto; /* to center  a block element */
+            width: 80vw;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid rgb(18, 17, 17);
+            background-color: rgb(16, 202, 244);
+            margin: 2px auto; /* to center  a block element */
+            width: 80vw;
+            font-size: 18px;
+            height: 20vh; /*view height*/
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .container p { /*em*/
+            font-size: 2em; /*Will inherit the font size from the parent(container) and the final font size will be multiplied(eg, 2x18) */
+        }
+
+
+
+
+
+        html {
+            font-size: 12px;
+        }
+
+        span { /*erm*/
+            font-size: 2rem; /* will inherit the root and multiply, eg: html is the root and then 2x12=24 is the final font size  */
+        }
+
+
+
+         .percent { /*percent*/
+            background-color: yellow;
+            padding: 2%;
+            border: solid green;
+         }
+
+
+         
+        /* vmin */
+
+        /* vmin takes the minimum thing if minimum is height then it will take height and if its width then it will take width as vmin */
+
+        /* vmin for pc is the height (vh) */
+        /* vmin for mobile is the width (vw) */
+
+
+
+        /* vmax */
+
+        /* vmax takes the maximum thing if max is height then it will take height and if its width then it will take width as vmin */
+
+        
+        /* vmax for pc is the width(vw)) */
+        /* vmax for mobile is the height (vh) */
+
+
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        This is a box.
+    </div>
+
+    <div class="container"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi rerum dignissimos explicabo pariatur non beatae, iste voluptatem aliquam iure ratione cum corporis praesentium.</p>
+    </div>
+
+    <br>
+    <br>
+
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, omnis sapiente reiciendis nostrum esse fuga! Laudantium voluptatum numquam architecto qui alias ut.</span>
+    <br><br><br>
+
+    <span class="percent">wasisssassdjkklswdkljsdjqsldjsd;dws;dwdqdwdsjwq</span>
+
+</body>
+</html>

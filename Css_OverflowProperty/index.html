@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Property -Css</title>
+    <style>
+        .box {
+            width: 10vw;
+            height: 10vh;
+            border: 2px solid black;
+
+            /* To prevent overflow */
+            overflow: scroll;  /* If it does not overflow then also scrollbar will be there */
+
+            overflow: auto;  /* If it overflows only then scrollbar will be shown or else no scrollbar will be shown */
+
+
+
+            /* white-space:   nowrap;  Everything will be in horizontal part and no element or text will be in the vertical part, and we have to only scroll horizontally */
+
+
+
+             /* To control the overflow individually and manually, according to our wish */
+             overflow-x: hidden;
+            overflow-y: scroll;
+
+            /* or */
+            /* overflow: hidden auto; */
+                    /*  x,    y */
+            /* overflow: auto hidden; */
+
+
+
+           /* text-overflow: ellipsis;  there will be dots where the text is overflowing */
+          
+          
+           overflow: e;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptas aperiam modi consequatur facere aliquid qui. Dolore reprehenderit accusamus delectus numquam modi iusto omnis, quidem iste a nihil consequatur illo incidunt eligendi excepturi perferendis culpa necessitatibus inventore eos ducimus? Ipsa expedita adipisci nisi nam odio nostrum consectetur fugiat molestiae laudantium.</div>
+
+</body>
+
+</html>

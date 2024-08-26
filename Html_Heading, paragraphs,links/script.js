@@ -1,0 +1,1 @@
+alert("Js file is linked to it")

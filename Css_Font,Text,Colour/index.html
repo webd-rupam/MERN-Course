@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font,Text -Css</title>
+
+    <!-- 3rd way to add fonts using link from Google Font/any website-->
+    <style>
+
+        /* 2nd way to add font property */
+        /* By importing from Google Fonts/any website */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+        /* 1st way to add font properties, manually */
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style:oblique;
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+        p {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style:italic;
+            font-weight: 500;
+            line-height: 40px; /*to add spaces between the line */
+            letter-spacing: 4px; /*to add spaces between the letters */
+        }
+
+        
+        div {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;    
+        }
+
+        h2 { 
+            text-transform: capitalize; /* to capitalize,lowercase, uppercase etc to the first letter, all the letters */
+
+            text-decoration:underline; /*to decorate the text like underline,overline, etc. */
+            
+            text-decoration-color: aqua; /* to colour the text decoration*/
+            text-decoration-style: wavy;
+            text-decoration-thickness: 5px;
+
+            text-indent: 50px; /*to make the element move left or right */
+        }
+
+        .op {
+            border: 5px solid gray;
+            width: 50px;
+
+           text-overflow: ellipsis;   /* how would be the the elemnt if it overflows, it will be hidden or not or anything alse */
+           
+            overflow: hidden;           
+        }
+
+        .ok {
+            border: 5px solid grey;
+            width: 120px;
+
+            word-break: break-all; /* if the last word does not fit then it will be showed till the border and rest letter of the word will be in another line. */
+        }
+
+        .topic {
+            text-align: center; /*aligns the text left, right or center */
+            text-decoration: underline;
+            text-decoration-line: line-through;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="topic">Fonts</h1>
+    <h1>About fonts</h1>
+    <h2>joke maat maar</h2>
+    <div>This is how they look like</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum harum, ratione iure deserunt enim quos quam libero itaque, iusto quasi amet assumenda in eveniet nemo dolor odio iste quae. Magnam voluptas sint temporibus, ipsum tenetur consequatur, minima est tempore veniam laboriosam earum perferendis enim.</p>
+
+    <br>
+
+    <p class="op">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia cumque quasi, veritatis in officiis aperiam accusantium qui earum blanditiis tempora? Exercitationem, voluptatibus! Aut!</p>
+    
+<br>
+
+<br>
+<p class="ok">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quos veniam dolore modi possimus itaque eveniet adipisci blanditiis, eum dignissimos minima dolores in optio distinctio repellendus, tenetur quasi numquam harum sunt enim!</p>
+    
+</body>
+</html>
